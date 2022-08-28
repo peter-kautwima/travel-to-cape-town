@@ -1,0 +1,226 @@
+body {
+  font-family: 'Lato', Sans-Serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arvo', Serif;
+}
+
+h1 {
+  font-size: 44px;
+}
+h2 {
+  font-size: 38px;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Header */
+#primary-header {
+  width: 100%;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+#primary-header h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+#primary-header div {
+  padding: 20px 10%;
+  background: rgba(0, 0, 0, 0.2);
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+/* Navigation */
+#primary-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+#primary-nav li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.8;
+  font-size: 18px;
+  padding: 34px 10px;
+  text-shadow: 1px 1px 5px #000000;
+}
+#primary-nav li a:hover,
+#primary-nav li a:focus {
+  opacity: 1;
+}
+
+#primary-nav li.active a {
+  border-bottom: 4px solid white;
+  background: rgba(0,0,0,0.1);
+}
+
+/* Container */
+main{
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+#primary-footer {
+  background: #f3f3f3;
+  padding: 20px 0;
+  margin-top: 80px;
+}
+#primary-footer div {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* Header */
+.home-header {
+  background: url('./images/table-mountain-1.jpg') no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+/**
+ * Utility classes
+ */
+.view-more-link {
+  color: #646FD4;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  font-size: 20px;
+}
+.view-more-link:hover,
+.view-more-link:focus {
+  color: #242F9B;
+}
+
+.label {
+  background: #DBDFFD;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+/*
+ * Featured Specials
+ */
+
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  top: 130px;
+}
+.carousel-controls button {
+  background-color: white;
+  border-radius: 90%;
+  border: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.carousel-controls button:hover,
+.carousel-controls button:focus {
+  transform: scale(1.1);
+}
+
+.carousel-controls .disabled {
+  opacity: 0;
+}
+
+.carousel-controls .prev {
+  background-image: url('./icons/left-arrow.svg');
+  background-repeat: no-repeat;
+  margin-left: 10px;
+
+}
+.carousel-controls .next {
+  background-image: url('./icons/right-arrow.svg');
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.featured-specials header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.featured-specials .carousel {
+  position: relative;
+  overflow: hidden;
+}
+.featured-specials .carousel .slide {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  transform: translateX(100%);
+  position: absolute;
+  top: 0;
+  transition: 0.5s all ease-in-out;
+}
+.featured-specials .carousel .slide--active {
+  transform: translateX(0);
+  position: relative;
+}
+
+/**
+ * Specials Page
+ */
+.specials-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+/**
+ * Special Card
+ */
+.special img {
+  max-width: 100%;
+  margin-bottom: 16px;
+  border-radius: 10px;
+}
+.special h3 {
+  margin: 16px 0;
+}
+.special .rating {
+  background: url('./icons/rating.svg') no-repeat;
+  padding-left: 24px;
+}
+
+/*
+ * Media Queries for responsive enhancements
+ */
+@media screen and (min-width: 768px) {
+  #primary-header div {
+    display: flex;
+    justify-content: space-between;
+  }
+}
