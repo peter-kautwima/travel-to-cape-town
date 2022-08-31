@@ -1,3 +1,7 @@
+/**-----------------------------------------------
+Card
+-----------------------------------------------*/
+
 .card {
   background-color: #fff;
   border-radius: 20px;
@@ -5,7 +9,6 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
-  overflow: hidden;
   position: relative;
   transition: all 0.2s ease-in-out;
 }
@@ -25,3 +28,51 @@
 .card:hover img {
   transform: scale(1.05);
 }
+
+/**-----------------------------------------------
+Card with img caption
+-----------------------------------------------*/
+
+.img-hover {
+  position: relative;
+}
+
+.img-caption .img-hover::after {
+  content: "Buy Now";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 53px;
+  transition: all 0.3s ease-in-out;
+}
+
+.img-caption:hover .img-hover::after {
+  opacity: 1;
+}
+
+.img-caption:hover {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.8);
+}
+
+.img-caption .img-caption-body {
+  padding: 20px;
+}
+
+.img-caption img {
+  max-width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.img-caption:hover img {
+  transform: scale(1.05);
+}
+
+

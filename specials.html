@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./styles/img-caption-animation.css" />
+    <link rel="stylesheet" href="./styles/grayscale.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="specials.css" />
     <link
@@ -13,7 +15,7 @@
     />
     <title>Travel to Cape Town | Specials</title>
   </head>
-  <body>
+  <body class="gray-scale">
     <header id="primary-header">
       <div>
         <h1>Travel to Cape Town</h1>
@@ -32,12 +34,14 @@
     <main>
       <h2>Specials</h2>
       <div class="specials-list">
-        <div class="special card">
-          <img
-            src="./images/specials-flights-thumbnail.png"
-            alt="Flight Specials"
-          />
-          <div class="card-body">
+        <div class="special card img-caption">
+          <div class="img-hover">
+            <img
+              src="./images/specials-flights-thumbnail.png"
+              alt="Flight Specials"
+            />
+          </div>
+          <div class="card-body img-caption-body">
             <span class="rating">4 <small>(1230)</small></span>
               <h3>Flight Specials</h3>
               <p>
