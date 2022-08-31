@@ -73,3 +73,17 @@ slideControls.addEventListener('click', event => {
     transitionSlides('right')
   }
 })
+
+
+/**
+ * Accessability Visual
+ * 
+ */
+const body = document.querySelector('body')
+document.addEventListener('click', event => {
+  const target = event.target
+  console.log('target', target)
+  if (target.id === 'accessability-visual') {
+    body.classList.toggle('gray-scale')
+  }
+})
