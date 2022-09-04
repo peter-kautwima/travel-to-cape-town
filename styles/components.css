@@ -13,6 +13,34 @@ Typography
 }
 
 /**-----------------------------------------------
+Article
+-----------------------------------------------*/
+article {
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+article dl {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+article dl dt {
+  font-weight: bold;
+}
+article blockquote {
+  border-left: 4px solid #cccccc;
+  padding-left: 20px;
+  margin-left: 0;
+}
+article blockquote cite {
+  display: block;
+  font-size: 0.8rem;
+  font-style: normal;
+  margin-top: 10px;
+}
+article blockquote cite:before {
+  content: "— ";
+}
+/**-----------------------------------------------
 Card
 -----------------------------------------------*/
 
