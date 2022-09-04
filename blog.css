@@ -4,18 +4,6 @@
   background-position: bottom;
 }
 
-.blog-list {
-  display: flex;
-}
-
-.blog-list > div:first-child {
-  width: 40%;
-  margin-right: 40px;
-}
-.blog-list > div:last-child {
-  width: 60%;
-}
-
 /* Blog Card */
 .blog-card {
 
@@ -49,4 +37,17 @@
 .blog-card-alt a:hover,
   .blog-card-alt a:focus {
   color: #242F9B;
+}
+
+@media screen and (min-width: 1140px) {
+  .blog-list {
+    display: flex;
+  }
+  .blog-list > div:first-child {
+    width: 40%;
+    margin-right: 40px;
+  }
+  .blog-list > div:last-child {
+    width: 60%;
+  }
 }
