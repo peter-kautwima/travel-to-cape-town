@@ -6,10 +6,15 @@
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./styles/image-gallery.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Arvo|Lato"
       rel="stylesheet"
     />
+    <!-- Spotlight Lib -->
+    <link rel="stylesheet" href="./styles/spotlight.min.css" />
+    <!-- End Spotlight Lib -->
     <title>Travel to Cape Town | Blog</title>
   </head>
   <body>
@@ -24,7 +29,9 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="specials.html">Specials</a></li>
             <li><a href="accomodation.html">Accomodation</a></li>
-            <li class="active"><a href="entertainment.html">Entertainment</a></li>
+            <li class="active">
+              <a href="entertainment.html">Entertainment</a>
+            </li>
             <li><a href="blog.html">Blog</a></li>
           </ul>
         </nav>
@@ -36,49 +43,76 @@
       <div class="blog-list">
         <div>
           <div class="blog-card">
-            <img
-              src="./images/cape-parade.jpg"
-              alt="Cape Town Parade"
-            />
+            <img src="./images/cape-parade.jpg" alt="Cape Town Parade" />
             <h3>Lorem ipsum dolor sit amet</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ab dolorem saepe placeat repudiandae libero nemo fuga delectus dignissimos consequatur sequi quod qui ex consectetur recusandae, laudantium odio veniam suscipit.</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ab
+              dolorem saepe placeat repudiandae libero nemo fuga delectus
+              dignissimos consequatur sequi quod qui ex consectetur recusandae,
+              laudantium odio veniam suscipit.
+            </p>
           </div>
         </div>
         <div>
           <div class="blog-card-alt">
-            <img
-              src="./images/cape-parade.jpg"
-              alt="Cape Town Parade"
-            />
+            <img src="./images/cape-parade.jpg" alt="Cape Town Parade" />
             <div class="excerpt">
               <h3>Lorem ipsum dolor sit amet consectetur</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ab dolorem saepe placeat repudiandae libero nemo fuga delectus dignissimos consequatur sequi quod qui ex consectetur recusandae, laudantium odio veniam suscipit.</p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+                ab dolorem saepe placeat repudiandae libero nemo fuga delectus
+                dignissimos consequatur sequi quod qui ex consectetur
+                recusandae, laudantium odio veniam suscipit.
+              </p>
               <a href="#">Read More</a>
             </div>
           </div>
           <div class="blog-card-alt">
-            <img
-              src="./images/cape-parade.jpg"
-              alt="Cape Town Parade"
-            />
+            <img src="./images/cape-parade.jpg" alt="Cape Town Parade" />
             <div class="excerpt">
               <h3>Lorem ipsum dolor sit amet consectetur</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ab dolorem saepe placeat repudiandae libero nemo fuga delectus dignissimos consequatur sequi quod qui ex consectetur recusandae, laudantium odio veniam suscipit.</p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+                ab dolorem saepe placeat repudiandae libero nemo fuga delectus
+                dignissimos consequatur sequi quod qui ex consectetur
+                recusandae, laudantium odio veniam suscipit.
+              </p>
               <a href="#">Read More</a>
             </div>
           </div>
           <div class="blog-card-alt">
-            <img
-              src="./images/cape-parade.jpg"
-              alt="Cape Town Parade"
-            />
+            <img src="./images/cape-parade.jpg" alt="Cape Town Parade" />
             <div class="excerpt">
               <h3>Lorem ipsum dolor sit amet consectetur</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ab dolorem saepe placeat repudiandae libero nemo fuga delectus dignissimos consequatur sequi quod qui ex consectetur recusandae, laudantium odio veniam suscipit.</p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+                ab dolorem saepe placeat repudiandae libero nemo fuga delectus
+                dignissimos consequatur sequi quod qui ex consectetur
+                recusandae, laudantium odio veniam suscipit.
+              </p>
               <a href="#">Read More</a>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="text-center">
+        <h2 class="stylized-heading">Gallery</h2>
+      </div>
+
+      <!-- Gallery -->
+      <div class="spotlight-group">
+          <!-- Large image -->
+        <a class="spotlight" href="./images/specials-balloons-thumbnail.png">
+          <!-- Thumbnail -->
+          <img src="./images/specials-balloons-thumbnail.png" />
+        </a>
+        <a class="spotlight" href="./images/specials-flights-thumbnail.png">
+          <img src="./images/specials-flights-thumbnail.png" />
+        </a>
+        <a class="spotlight" href="./images/specials-boat-thumbnail.png">
+          <img src="./images/specials-boat-thumbnail.png" />
+        </a>
       </div>
     </main>
 
@@ -87,7 +121,8 @@
         <p>© 2021 Travel to Cape Town</p>
       </div>
     </footer>
-    
+
+    <script src="./scripts/spotlight.min.js"></script>
     <script src="./scripts/main.js"></script>
   </body>
 </html>

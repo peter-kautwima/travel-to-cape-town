@@ -1,0 +1,13 @@
+.spotlight-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.spotlight-group a {
+  max-width: 100%;
+}
+
+.spotlight-group img {
+  max-width: 100%;
+}

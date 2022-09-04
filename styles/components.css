@@ -1,4 +1,18 @@
 /**-----------------------------------------------
+Typography
+-----------------------------------------------*/
+.stylized-heading {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 40px;
+  border-bottom: 1px solid #df5a56;
+  margin: 40px 0;
+}
+.text-center {
+  text-align: center;
+}
+
+/**-----------------------------------------------
 Card
 -----------------------------------------------*/
 
