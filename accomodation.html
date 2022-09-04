@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="specials.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./styles/handorgel.min.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Arvo|Lato"
       rel="stylesheet"
@@ -125,6 +127,33 @@
           <button class="label">R2099</button>
         </div>
       </div>
+
+      <div class="text-center">
+        <h3 class="stylized-heading">FAQs</h3>
+      </div>
+
+      <div class="handorgel">
+        <h3 class="handorgel__header">
+          <button class="handorgel__header__button" autofocus>
+            Title (autofocused)
+          </button>
+        </h3>
+        <div class="handorgel__content" data-open>
+          <div class="handorgel__content__inner">
+            Content openened by default
+          </div>
+        </div>
+        <h3 class="handorgel__header">
+          <button class="handorgel__header__button">
+            Title 2
+          </button>
+        </h3>
+        <div class="handorgel__content">
+          <div class="handorgel__content__inner">
+            Content closed by default
+          </div>
+        </div>
+      </div>
       
     </main>
 
@@ -134,6 +163,7 @@
       </div>
     </footer>
 
+    <script src="./scripts/handorgel.min.js"></script>
     <script src="./scripts/main.js"></script>
   </body>
 </html>
