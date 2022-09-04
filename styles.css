@@ -47,6 +47,8 @@ h6 {
 }
 
 #primary-header div {
+  position: sticky;
+  top: 0;
   padding: 20px 10%;
   background: rgba(0, 0, 0, 0.2);
   align-items: center;
@@ -295,4 +297,23 @@ main {
     display: flex;
     justify-content: space-between;
   }
+}
+
+
+/**
+ * Scroll to top button
+ */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  outline: none;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.scroll-to-top img {
+  width: 20px;
+  padding: 10px;
 }

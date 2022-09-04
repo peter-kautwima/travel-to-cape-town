@@ -78,12 +78,13 @@ const transitionSlides = (direction = 'right') => {
   updateSlideControls()
 }
 
+const body = document.querySelector('body')
 
 /**
  * Accessability Visual
  * 
  */
-const body = document.querySelector('body')
+
 document.addEventListener('click', event => {
   const target = event.target
   console.log('target', target)
@@ -99,4 +100,21 @@ const mobileMenu = document.querySelector('#primary-nav')
 const mobileMenuToggle = document.querySelector('.toggle-mobile-nav')
 mobileMenuToggle.addEventListener('click', event => {
   mobileMenu.classList.toggle('active')
+})
+
+/**
+ * Scroll to top
+ */
+const scrollToTopButton = document.createElement('button')
+const scrollToTopIcon = document.createElement('img')
+scrollToTopIcon.src = './icons/up-arrow.svg'
+scrollToTopIcon.alt = 'Scroll to top'
+scrollToTopButton.classList.add('scroll-to-top')
+scrollToTopButton.appendChild(scrollToTopIcon)
+body.appendChild(scrollToTopButton)
+scrollToTopButton.addEventListener('click', event => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
 })
