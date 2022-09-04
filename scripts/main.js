@@ -87,3 +87,12 @@ document.addEventListener('click', event => {
     body.classList.toggle('gray-scale')
   }
 })
+
+/**
+ * Mobile Menu
+ */
+const mobileMenu = document.querySelector('#primary-nav')
+const mobileMenuToggle = document.querySelector('.toggle-mobile-nav')
+mobileMenuToggle.addEventListener('click', event => {
+  mobileMenu.classList.toggle('active')
+})
