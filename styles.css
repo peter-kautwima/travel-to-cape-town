@@ -315,7 +315,8 @@ main {
 /**
  * Scroll to top button
  */
-.scroll-to-top {
+.scroll-to-top,
+.accessability-visual {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -325,7 +326,12 @@ main {
   cursor: pointer;
 }
 
-.scroll-to-top img {
+.accessability-visual {
+  bottom: 80px;
+}
+
+.scroll-to-top img,
+.accessability-visual img {
   width: 20px;
   padding: 10px;
 }

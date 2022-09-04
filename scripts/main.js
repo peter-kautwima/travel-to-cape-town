@@ -84,13 +84,15 @@ const body = document.querySelector('body')
  * Accessability Visual
  * 
  */
-
-document.addEventListener('click', event => {
-  const target = event.target
-  console.log('target', target)
-  if (target.id === 'accessability-visual') {
-    body.classList.toggle('gray-scale')
-  }
+const accessabilityButton = document.createElement('button')
+const accessibilityIcon = document.createElement('img')
+accessibilityIcon.src = './icons/accessibility.svg'
+accessibilityIcon.alt = 'Toggle accessability features'
+accessabilityButton.classList.add('accessability-visual')
+accessabilityButton.appendChild(accessibilityIcon)
+body.appendChild(accessabilityButton)
+accessabilityButton.addEventListener('click', () => {
+  body.classList.toggle('gray-scale')
 })
 
 /**
@@ -98,7 +100,7 @@ document.addEventListener('click', event => {
  */
 const mobileMenu = document.querySelector('#primary-nav')
 const mobileMenuToggle = document.querySelector('.toggle-mobile-nav')
-mobileMenuToggle.addEventListener('click', event => {
+mobileMenuToggle.addEventListener('click', () => {
   mobileMenu.classList.toggle('active')
 })
 
@@ -112,7 +114,7 @@ scrollToTopIcon.alt = 'Scroll to top'
 scrollToTopButton.classList.add('scroll-to-top')
 scrollToTopButton.appendChild(scrollToTopIcon)
 body.appendChild(scrollToTopButton)
-scrollToTopButton.addEventListener('click', event => {
+scrollToTopButton.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
