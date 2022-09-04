@@ -1,10 +1,26 @@
 const carouselSlides = document.querySelector('.carousel .slides')
-const slides = Array.from(carouselSlides.children)
+if (carouselSlides) {
+  const slides = Array.from(carouselSlides.children)
 
-// Set default X position for each slide
-slides.forEach((slide, index) => {
-  slide.style.transform = `translateX(${index * 100}%)`
-})
+  // Set default X position for each slide
+  slides.forEach((slide, index) => {
+    slide.style.transform = `translateX(${index * 100}%)`
+  })
+}
+
+const slideControls = document.querySelector('.carousel-controls')
+// Slide control event listener
+// Transition slides when controls are clicked
+if (slideControls) {
+  slideControls.addEventListener('click', event => {
+    const target = event.target
+    if (target.classList.contains('prev')) {
+      transitionSlides('left')
+    } else if (target.classList.contains('next')) {
+      transitionSlides('right')
+    }
+  })
+}
 
 // Hide left control when no more slides to the left
 // Hide right control when no more slides to the right
@@ -61,18 +77,6 @@ const transitionSlides = (direction = 'right') => {
 
   updateSlideControls()
 }
-
-const slideControls = document.querySelector('.carousel-controls')
-// Slide control event listener
-// Transition slides when controls are clicked
-slideControls.addEventListener('click', event => {
-  const target = event.target
-  if (target.classList.contains('prev')) {
-    transitionSlides('left')
-  } else if (target.classList.contains('next')) {
-    transitionSlides('right')
-  }
-})
 
 
 /**

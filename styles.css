@@ -257,9 +257,18 @@ main {
  * Specials Page
  */
 .specials-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .specials-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .specials-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }  
 }
 
 /**
