@@ -311,6 +311,60 @@ main {
   }
 }
 
+/**
+ * Duplication Blog info
+ */
+/* Blog Card */
+.blog-card {
+  margin-top: 70px;
+}
+
+.blog-card img {
+  border-radius: 20px;
+  max-width: 100%;
+}
+
+/* Alternative blog card */
+.blog-card-alt {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+.blog-card-alt img {
+  max-width: 200px;
+  margin-right: 20px;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+.blog-card-alt h3 {
+  margin-top: 20;
+}
+.blog-card-alt a {
+  color: #646FD4;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.blog-card-alt a:hover,
+  .blog-card-alt a:focus {
+  color: #242F9B;
+}
+
+@media screen and (min-width: 1140px) {
+  .blog-list {
+    display: flex;
+  }
+  .blog-list > div:first-child {
+    width: 40%;
+    margin-right: 40px;
+  }
+  .blog-list > div:last-child {
+    width: 60%;
+  }
+}
+
 
 /**
  * Scroll to top button
