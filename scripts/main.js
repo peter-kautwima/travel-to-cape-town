@@ -1,4 +1,7 @@
+// Assign temporary slides variable to null
 let slides = null
+
+// Set initial slide positions
 const carouselSlides = document.querySelector('.carousel .slides')
 if (carouselSlides) {
   slides = Array.from(carouselSlides.children)
@@ -15,8 +18,10 @@ const slideControls = document.querySelector('.carousel-controls')
 if (slideControls) {
   slideControls.addEventListener('click', event => {
     const target = event.target
+    // Move slide left if prev control is clicked
     if (target.classList.contains('prev')) {
       transitionSlides('left')
+    // Move slide right if next control is clicked
     } else if (target.classList.contains('next')) {
       transitionSlides('right')
     }
@@ -46,7 +51,7 @@ const updateSlideControls = () => {
 }
 
 /**
- * 
+ * Function to transition slides
  * @param {String} direction 'left'|'right'
  */
 const transitionSlides = (direction = 'right') => {
@@ -82,8 +87,9 @@ const transitionSlides = (direction = 'right') => {
 const body = document.querySelector('body')
 
 /**
- * Accessability Visual
- * 
+ * Visual Accessability Toggle
+ * Adds a 'accessibility-visual' class to the body
+ * CSS is responsible for adding visual accessability styles
  */
 const accessabilityButton = document.createElement('button')
 accessabilityButton.setAttribute('aria-label', 'Enable accessibility mode')
@@ -99,6 +105,7 @@ accessabilityButton.addEventListener('click', () => {
 
 /**
  * Mobile Menu
+ * Toggle mobile menu when menu button is clicked
  */
 const mobileMenu = document.querySelector('#primary-nav')
 const mobileMenuToggle = document.querySelector('.toggle-mobile-nav')
@@ -108,6 +115,7 @@ mobileMenuToggle.addEventListener('click', () => {
 
 /**
  * Scroll to top
+ * Scroll to the top of the webpage when the scroll to top button is clicked
  */
 const scrollToTopButton = document.createElement('button')
 scrollToTopButton.setAttribute('aria-label', 'Scroll to top')
@@ -126,6 +134,8 @@ scrollToTopButton.addEventListener('click', () => {
 
 /**
  * Accordion (Handorgel)
+ * Initialize and configure the handorgel accordion
+ * @link https://github.com/oncode/handorgel
  */
 const accordion = new handorgel(document.querySelector('.handorgel'), {
 
