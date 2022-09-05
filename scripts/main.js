@@ -1,6 +1,7 @@
+let slides = null
 const carouselSlides = document.querySelector('.carousel .slides')
 if (carouselSlides) {
-  const slides = Array.from(carouselSlides.children)
+  slides = Array.from(carouselSlides.children)
 
   // Set default X position for each slide
   slides.forEach((slide, index) => {
@@ -85,6 +86,7 @@ const body = document.querySelector('body')
  * 
  */
 const accessabilityButton = document.createElement('button')
+accessabilityButton.setAttribute('aria-label', 'Enable accessibility mode')
 const accessibilityIcon = document.createElement('img')
 accessibilityIcon.src = './icons/accessibility.svg'
 accessibilityIcon.alt = 'Toggle accessability features'
@@ -108,6 +110,7 @@ mobileMenuToggle.addEventListener('click', () => {
  * Scroll to top
  */
 const scrollToTopButton = document.createElement('button')
+scrollToTopButton.setAttribute('aria-label', 'Scroll to top')
 const scrollToTopIcon = document.createElement('img')
 scrollToTopIcon.src = './icons/up-arrow.svg'
 scrollToTopIcon.alt = 'Scroll to top'
