@@ -222,29 +222,47 @@
           </button>
         </h3>
         <div class="handorgel__content" data-open>
-          <div class="handorgel__content__inner">
-            No this is real
-          </div>
+          <div class="handorgel__content__inner">No this is real</div>
         </div>
         <h3 class="handorgel__header">
-          <button class="handorgel__header__button">
-            Where do i sign up?
-          </button>
+          <button class="handorgel__header__button">Where do i sign up?</button>
         </h3>
         <div class="handorgel__content">
-          <div class="handorgel__content__inner">
-           Here
-          </div>
+          <div class="handorgel__content__inner">Here</div>
         </div>
       </div>
-      
     </main>
 
     <footer id="primary-footer">
       <div>
-        <p>© 2021 Travel to Cape Town</p>
-        <a href="/report/index.html">Report</a>
+        <div>
+          <p>© 2021 Travel to Cape Town</p>
+          <a href="/report/index.html">Report</a>
+        </div>
+        
+        <!-- Contact form -->
+        <section id="contact">
+          <h3>Contact Us</h3>
+          <div class="contact-form-wrapper">
+            <form>
+              <div class="form-item">
+                <input type="text" name="sender" required />
+                <label>Name:</label>
+              </div>
+              <div class="form-item">
+                <input type="text" name="email" required />
+                <label>Email:</label>
+              </div>
+              <div class="form-item">
+                <textarea class="" name="message" required></textarea>
+                <label>Message:</label>
+              </div>
+              <button class="submit-btn">Send</button>
+            </form>
+          </div>
+        </section>
       </div>
+
     </footer>
     <script src="./scripts/handorgel.min.js"></script>
     <script src="./scripts/main.js"></script>
