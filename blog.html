@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="./styles/handorgel.min.css" />
+    <!-- Spotlight Lib -->
+    <link rel="stylesheet" href="./styles/spotlight.min.css" />
+    <!-- End Spotlight Lib -->
 
     <title>Travel to Cape Town | Blog</title>
   </head>
@@ -20,10 +24,10 @@
         <nav id="primary-nav">
           <ul>
             <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="blog.html">Travel News</a></li>
             <li><a href="specials.html">Specials</a></li>
             <li><a href="accomodation.html">Accomodation</a></li>
             <li><a href="entertainment.html">Entertainment</a></li>
-            <li class="active"><a href="blog.html">Travel News</a></li>
           </ul>
         </nav>
       </div>
@@ -161,11 +165,10 @@
             them so you can see how they will look in the overall page layout.
           </p>
           <p>
-            Some elements in a
-
-            are controlled by the style sheet, while others are controlled by
-            the Template files. Try to work on as much as you can from the style
-            sheet first, then you can mess with the template files.
+            Some elements in a are controlled by the style sheet, while others
+            are controlled by the Template files. Try to work on as much as you
+            can from the style sheet first, then you can mess with the template
+            files.
           </p>
           <p>
             Remember, any changes you make to the style sheet and template files
@@ -194,15 +197,103 @@
           ></iframe>
         </div>
       </div>
-    </main>
 
+      <!-- FAQ's -->
+      <div class="text-center">
+        <h3 class="stylized-heading">FAQs</h3>
+      </div>
+
+      <!-- Question 1 -->
+      <div class="handorgel">
+        <h3 class="handorgel__header">
+          <button class="handorgel__header__button" autofocus>
+            How long do all specials run?
+          </button>
+        </h3>
+        <div class="handorgel__content" data-open>
+          <div class="handorgel__content__inner">
+            Specials end November 29th!
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <h3 class="handorgel__header">
+          <button class="handorgel__header__button">How do I book?</button>
+        </h3>
+        <div class="handorgel__content">
+          <div class="handorgel__content__inner">
+            Email info@traveltocapetown.com
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <h3 class="handorgel__header">
+          <button class="handorgel__header__button">
+            What are the most magical places to visit?
+          </button>
+        </h3>
+        <div class="handorgel__content">
+          <div class="handorgel__content__inner">
+            Table Mountain, Kirstenbosch Botanical Gardens, Cape Point, Robben
+            Island, and the V&A Waterfront.
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <h3 class="handorgel__header">
+          <button class="handorgel__header__button">
+            Is it to good to be true?
+          </button>
+        </h3>
+        <div class="handorgel__content">
+          <div class="handorgel__content__inner">Nope we got you!.</div>
+        </div>
+
+        <!-- Question 5 -->
+        <h3 class="handorgel__header">
+          <button class="handorgel__header__button">
+            Can I pay with my credit card?
+          </button>
+        </h3>
+        <div class="handorgel__content">
+          <div class="handorgel__content__inner">You bet you!</div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
     <footer id="primary-footer">
       <div>
-        <p>© 2021 Travel to Cape Town</p>
-        <a href="/report/index.html">Report</a>
+        <div>
+          <p>© 2021 Travel to Cape Town</p>
+          <a href="/report/index.html">Report</a>
+        </div>
+
+        <!-- Contact form -->
+        <section id="contact">
+          <h3>Contact Us</h3>
+          <div class="contact-form-wrapper">
+            <form>
+              <div class="form-item">
+                <input type="text" name="sender" required />
+                <label>Name:</label>
+              </div>
+              <div class="form-item">
+                <input type="text" name="email" required />
+                <label>Email:</label>
+              </div>
+              <div class="form-item">
+                <textarea class="" name="message" required></textarea>
+                <label>Message:</label>
+              </div>
+              <button class="submit-btn">Send</button>
+            </form>
+          </div>
+        </section>
       </div>
     </footer>
 
+    <script src="./scripts/spotlight.min.js"></script>
+    <script src="./scripts/handorgel.min.js"></script>
     <script src="./scripts/main.js"></script>
   </body>
 </html>

@@ -14,6 +14,9 @@
     <!-- Handorgel JS Library (Accordions) -->
     <link rel="stylesheet" href="./styles/handorgel.min.css" />
 
+    <!-- Spotlight Lib -->
+    <link rel="stylesheet" href="./styles/spotlight.min.css" />
+    <!-- End Spotlight Lib -->
     <title>Travel to Cape Town</title>
   </head>
   <body>
@@ -28,19 +31,32 @@
         <nav id="primary-nav">
           <ul>
             <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Travel News</a></li>
             <li><a href="specials.html">Specials</a></li>
             <li><a href="accomodation.html">Accomodation</a></li>
             <li><a href="entertainment.html">Entertainment</a></li>
-            <li><a href="blog.html">Travel News</a></li>
           </ul>
         </nav>
       </div>
-      <!-- Introduction Heading -->
-      <h1>Featured ...</h1>
     </header>
 
     <!-- Main section -->
     <main>
+      <!-- Travel News -->
+      <div class="text-center">
+        <h3 class="stylized-heading">Travel News</h3>
+      </div>
+      <div class="video-container">
+        <iframe
+          width="1280"
+          height="720"
+          src="https://www.youtube.com/embed/srP7RFVdjWc"
+          title="Cape Town Vacation Travel Guide | Expedia"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
       <!-- Featured Specials -->
       <div class="featured-specials">
         <!-- Specials Header -->
@@ -155,7 +171,34 @@
           </div>
         </div>
       </div>
+
+      <!-- Image Gallery -->
+      <div class="text-center">
+        <h2 class="stylized-heading">Gallery</h2>
+        <h4>Click image to view gallery</h4>
+      </div>
+
+      <!-- Gallery -->
+      <div class="spotlight-group">
+        <!-- Large image -->
+        <a class="spotlight" href="./images/winelands-1.jpg">
+          <!-- Thumbnail -->
+          <img src="./images/winelands-1-thumbnail.png" alt="Winelands" />
+        </a>
+        <a class="spotlight" href="./images/winelands-2.jpg">
+          <img src="./images/winelands-2.jpg" alt="Winelands 2" />
+        </a>
+        <a class="spotlight" href="./images/winelands-3.jpg">
+          <img src="./images/winelands-3.jpg" alt="Winelands 3" />
+        </a>
+      </div>
+
+      <!-- Entertainment  -->
       <div>
+        <div class="text-center">
+          <h2 class="stylized-heading">Entertainmet</h2>
+        </div>
+
         <div class="blog-list">
           <div>
             <div class="blog-card">
@@ -193,6 +236,7 @@
         </div>
       </div>
 
+      <!-- FAQ's -->
       <div class="text-center">
         <h3 class="stylized-heading">FAQs</h3>
       </div>
@@ -212,40 +256,6 @@
         <div class="handorgel__content">
           <div class="handorgel__content__inner">Here</div>
         </div>
-      </div>
-
-      <!-- Image Gallery -->
-      <div class="text-center">
-        <h2 class="stylized-heading">Gallery</h2>
-        <p>Click image to view gallery</p>
-      </div>
-
-      <!-- Gallery -->
-      <div class="spotlight-group">
-        <!-- Large image -->
-        <a class="spotlight" href="./images/winelands-1.jpg">
-          <!-- Thumbnail -->
-          <img src="./images/winelands-1-thumbnail.png" alt="Winelands" />
-        </a>
-        <a class="spotlight" href="./images/winelands-2.jpg">
-          <img src="./images/winelands-2.jpg" alt="Winelands 2" />
-        </a>
-        <a class="spotlight" href="./images/winelands-3.jpg">
-          <img src="./images/winelands-3.jpg" alt="Winelands 3" />
-        </a>
-      </div>
-
-      <!-- Video -->
-      <div class="video-container">
-        <iframe
-          width="1280"
-          height="720"
-          src="https://www.youtube.com/embed/srP7RFVdjWc"
-          title="Cape Town Vacation Travel Guide | Expedia"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
       </div>
     </main>
 
