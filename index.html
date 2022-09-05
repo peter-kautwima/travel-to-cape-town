@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="./styles/grayscale.css" />
     <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./styles/image-gallery.css" />
     <link rel="stylesheet" href="styles.css" />
 
     <!-- Handorgel JS Library (Accordions) -->
@@ -157,52 +158,39 @@
           <div>
             <div class="blog-card">
               <img src="./images/cape-parade.jpg" alt="Cape Town Parade" />
-              <h3>Best Wine Farms in the Cape</h3>
+              <h3>Cape Parade</h3>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
-                ab dolorem saepe placeat repudiandae libero nemo fuga delectus
-                dignissimos consequatur sequi quod qui ex consectetur
-                recusandae, laudantium odio veniam suscipit.
+               Come to the best Parade on the continent! 
               </p>
-              <a href="#">Read More</a>
             </div>
           </div>
           <div>
             <div class="blog-card-alt">
-              <img src="./images/cape-parade.jpg" alt="Cape Town Parade" />
+              <img src="./images/aquarium.jpg" alt="aquarium" />
               <div class="excerpt">
-                <h3>Restaurants in Cape Town</h3>
+                <h3>Explore the best aquariums in the Cape</h3>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Autem ab dolorem saepe placeat repudiandae libero nemo fuga
-                  delectus dignissimos consequatur sequi quod qui ex consectetur
-                  recusandae, laudantium odio veniam suscipit.
+                  See what lies in our oceans! 
                 </p>
                 <a href="#">Read More</a>
               </div>
             </div>
             <div class="blog-card-alt">
-              <img src="./images/cape-parade.jpg" alt="Cape Town Parade" />
+              <img src="./images/penguine.png" alt="penguine" />
               <div class="excerpt">
-                <h3>Wine Farms</h3>
+                <h3>Explore our animals in their natural habitat</h3>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Autem ab dolorem saepe placeat repudiandae libero nemo fuga
-                  delectus dignissimos consequatur sequi quod qui ex consectetur
-                  recusandae, laudantium odio veniam suscipit.
+                  Its nothing like you have ever seen before! 
                 </p>
                 <a href="#">Read More</a>
               </div>
             </div>
             <div class="blog-card-alt">
-              <img src="./images/cape-parade.jpg" alt="Cape Town Parade" />
+              <img src="./images/art-food.png" alt="art-food" />
               <div class="excerpt">
-                <h3>Safari Tours</h3>
+                <h3>Explore our heritage</h3>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Autem ab dolorem saepe placeat repudiandae libero nemo fuga
-                  delectus dignissimos consequatur sequi quod qui ex consectetur
-                  recusandae, laudantium odio veniam suscipit.
+                  Architecture, food, music and more!
                 </p>
                 <a href="#">Read More</a>
               </div>
@@ -230,6 +218,40 @@
         <div class="handorgel__content">
           <div class="handorgel__content__inner">Here</div>
         </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="text-center">
+        <h2 class="stylized-heading">Gallery</h2>
+        <p>Click image to view gallery</p>
+      </div>
+
+      <!-- Gallery -->
+      <div class="spotlight-group">
+          <!-- Large image -->
+        <a class="spotlight" href="./images/winelands-1.jpg">
+          <!-- Thumbnail -->
+          <img src="./images/winelands-1-thumbnail.png" alt="Winelands" />
+        </a>
+        <a class="spotlight" href="./images/winelands-2.jpg">
+          <img src="./images/winelands-2.jpg" alt="Winelands 2" />
+        </a>
+        <a class="spotlight" href="./images/winelands-3.jpg">
+          <img src="./images/winelands-3.jpg" alt="Winelands 3" />
+        </a>
+      </div>
+
+      <!-- Video -->
+      <div class="video-container">
+        <iframe
+          width="1280"
+          height="720"
+          src="https://www.youtube.com/embed/srP7RFVdjWc"
+          title="Cape Town Vacation Travel Guide | Expedia"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
     </main>
 
@@ -265,6 +287,7 @@
 
     </footer>
     <script src="./scripts/handorgel.min.js"></script>
+    <script src="./scripts/spotlight.min.js"></script>
     <script src="./scripts/main.js"></script>
     <script src="./scripts/audio.js"></script>
   </body>
